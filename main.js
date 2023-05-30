@@ -1,9 +1,11 @@
 // 1 task  ///////////////////////////////////////////////////////
 
 const UAH_PER_DOLLAR = 40;
+const INITIAL_COUNT_DOLLARS = 10;
 const MAX_COUNT_DOLLARS = 100;
+const DOLLARS_STEP = 10;
 
-for (let i = 10; i <= MAX_COUNT_DOLLARS; i += 10) {
+for (let i = INITIAL_COUNT_DOLLARS; i <= MAX_COUNT_DOLLARS; i += DOLLARS_STEP) {
   console.log(`You need pay ${UAH_PER_DOLLAR * i} UAH per ${i} USD`);
 }
 
